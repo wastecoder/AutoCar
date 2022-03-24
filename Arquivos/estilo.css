@@ -1,0 +1,195 @@
+/*Cores bonitas:
+encycolorpedia.com/
+clrs.cc/
+
+NAVY    #001f3f    #0076f4     #1090ff
+BLUE    #0074D9
+AQUA    #7FDBFF
+ORANGE  #FF851B
+*/
+
+*,
+ul,
+li,
+p {
+    margin: 0;
+    box-sizing: border-box;
+    /*font-family: "Baloo Tammudu 2", cursive;*/
+    /*font-family: "Dokdo", cursive;*/
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: lightgray;
+}
+
+.topo li {
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 10px;
+    padding: 10px 20px;
+    font-size: 1.6rem;
+    box-shadow: 0px 0px 2px 1px white;
+}
+
+.topo li:hover {
+    box-shadow: 0px 1px 9px 2px white;
+}
+
+.topo a {
+    text-decoration: none;
+    color: white;
+}
+
+.topo {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    background: #0074D9;
+    color: white;
+    padding: 10px;
+    height: 150px;
+}
+
+.topo img {
+    max-width: 200px;
+    margin-left: 20px;
+}
+
+.topo p {
+    color: rgb(255, 255, 255);
+    font-size: 6rem;
+}
+
+
+/*.image-box {
+    max-width: 170px;
+    max-height: 370px;
+}*/
+
+
+/*Início Flexbox */
+
+.central {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.central>div {
+    /*Precisa do > para a formatação do .car-img não herdar isso*/
+    flex: 0 0 295px;
+    /*flex: 1 1 300px;*/
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    border: solid 2px #0074D9;
+    background: white;
+    box-shadow: 4px 4px 10px black;
+}
+
+.central div img {
+    max-width: 100%;
+    max-height: 180px;
+}
+
+.central .car-img {
+    max-width: 100%;
+    height: 155px;
+    overflow: hidden;
+    /*Overflow corta a imagem se a imagem for grande demais*/
+}
+
+.central div h1 {
+    /*Título - modelo*/
+    font-size: 1.4rem;
+    background: #0074D9;
+    color: white;
+    margin-bottom: 10px;
+    font-weight: normal
+}
+
+.central div h2 {
+    /*Descrição - nome, ano, descrição*/
+    font-size: 1.2rem;
+}
+
+.central div h3 {
+    /*Preço*/
+    font-size: 1.5em;
+    color: red;
+}
+
+
+/* Formulário */
+
+.central-div {
+    /*height: 580px;*/
+    height: auto;
+    width: 900px;
+    margin: 15px auto;
+    padding: 30px 35px 20px 35px;
+    background-color: white;
+    text-align: center;
+    border: double 2px gray;
+    box-shadow: 3px 3px 10px black;
+}
+
+.form-central {
+    font-size: 18px;
+}
+
+input[type=text],
+input[type=number],
+input[type=email],
+input[type=password],
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 3px 0 15px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border: 2px solid grey;
+    border-radius: 4px;
+}
+
+input[type=text]:focus,
+input[type=number]:focus {
+    background-color: lightgray;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#button1 {
+    background-color: #555555;
+    margin: 15px 2px;
+    padding: 14px 40px;
+    width: 45%;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+
+/* PESQUISA */
+
+.central-pesquisa {
+    text-align: center;
+    align-items: center;
+    padding-top: 20px;
+    width: 400px;
+    margin: 0 auto;
+}
+
+
+/*.central-pesquisa input {}*/

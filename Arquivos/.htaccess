@@ -1,0 +1,9 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{REQUESTE_FILENAME} !-f
+RewriteCond %{REQUESTE_FILENAME} !-d
+
+    RewriteRule ^alterar/([0-9]+)$ alterar.php?codigo=$1
+
+</IfModule>
+
