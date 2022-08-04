@@ -1,3 +1,4 @@
+<?php require('PHP/loginVerification.php'); ?>
 <?php include('includes/head.php'); ?>
 
 <body>
